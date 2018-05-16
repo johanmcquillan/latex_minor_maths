@@ -1,0 +1,30 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{minor_maths}[2018/05/16 JMcQuillan Small Package of Maths & Physics Shortcuts]
+
+
+% CALCULUS
+
+% Differential (simply an upright d)
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+% Differential of order n (an upright d to the power of n)
+\newcommand*\diffn[1]{\mathop{}\!\mathrm{d^#1}}
+
+% First derivative
+\newcommand*\deriv[2]{\frac{\diff #1}{\diff #2}}
+% nth derivative
+\newcommand*\derivn[3]{\frac{\diffn{#1} #2}{\diff #3^#1}}
+
+% Partial derivative
+\newcommand*\derivp[2]{\frac{\partial #1}{\partial #2}}
+% nth partial derivative
+\newcommand*\Derivp[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+
+
+% PHYSICS
+
+% Fermi level
+\newcommand*{\fermi}{\varepsilon_F}
+% Bohr radii
+\newcommand*{\bohr}{a\textsubscript{0}}
+
+\endinput
